@@ -1,0 +1,28 @@
+// top head
+.top-head{
+	background: url('image/head-bg.jpg');
+	ul{
+		@include textAlign(right);
+		li{
+			@include Display(inline-block);
+			@include VerticalAlign(middle);
+			padding: 1em;
+		}
+	}
+}
+.logo-wrap {
+	background: $logoHeadColor;
+	.holder{
+		padding: 1.5em 0;
+	}
+	h1{
+		margin: 0;
+	}
+}
+.header{
+	.navbar{
+		background: $navColor url('image/nav-bg.jpg');
+		border: none;
+		@include BorderRadius(0);
+	}
+}

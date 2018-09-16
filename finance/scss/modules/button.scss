@@ -1,0 +1,24 @@
+.btn-primary{
+	background-color: $primaryAnchorColor;
+	border-color: $primaryAnchorColor;
+	
+	&:hover,
+	&:focus{
+		background-color: lighten($primaryAnchorColor, 10%);
+		border-color: $primaryAnchorColor;
+	}
+}
+
+.btn-warning{
+	background-color: lighten($primaryHoverColor, 10%);
+	border-color: lighten($primaryHoverColor, 10%);
+	color: $primaryColor;
+	font-size: 1.8rem;
+	@include textTransform(capitalize);
+	
+	&:hover,
+	&:focus{
+		background-color: $primaryHoverColor;
+		border-color: $primaryHoverColor;
+	}
+}
