@@ -1,0 +1,11 @@
+.btn-warning{
+	background-color: darken($primaryAnchorColor, 10%);
+	border-color: darken($primaryAnchorColor, 10%);
+	color: $black;
+	
+	&:hover,
+	&:focus{
+		background-color: darken($primaryAnchorColor, 15%);
+		border-color: darken($primaryAnchorColor, 15%);
+	}
+}

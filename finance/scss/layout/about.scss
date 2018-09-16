@@ -1,0 +1,12 @@
+/* about */
+.general {
+	.cont-wrap{
+		h2{
+			@include textTransform(uppercase);
+		}
+		@include textAlign(justify);
+	}
+}
+.text-transform{
+	@include textTransform(uppercase);
+}

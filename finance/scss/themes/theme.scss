@@ -1,0 +1,33 @@
+// theme color 
+$primaryAnchorColor: #efd334;
+$primaryHoverColor: lighten($primaryAnchorColor, 10%);
+$formColor: #666;
+$navyColor: #000080;
+$blueColor: #1d5a96;
+
+// normal colors
+$white: #fff;
+$lightWhite: #f1f1f1;
+$white1: #faf9f9;
+$white2: #fefefe;
+$white3: #f9f9f9;
+$white4: #f6f6f6;
+$lightGrey: #eee;
+$grey: #ccc;
+$grey2: #ddd;
+$grey3: #dedede;
+$lightBlack: #999;
+$black: #000;
+
+// selection color
+$selectionBackColor: $primaryAnchorColor;
+
+// form lable color
+$formLabelColor: #006666;
+
+// social icons
+$facebook: #4e71a8;
+$twitter: #1cb7eb;
+$googlePlus: #e3411f;
+$linkedin: #1686b0;
+$youtube: #ca3737;
