@@ -92,7 +92,7 @@ a{
 
 a:hover,
 a:focus{
-	@include textDecoration(underline);
+	@include textDecoration(none);
 	@include Outline(none);
 }
 /* Input textarea select

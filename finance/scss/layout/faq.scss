@@ -1,0 +1,38 @@
+.faq{
+	.nav-tabs{
+		a{
+			@include textAlign(center);
+			color: $blueColor;
+			padding: 1.5em 2.5em;
+			min-height: calc(7em);
+			small{
+				@include Display(block);
+				color: $primaryColor;
+			}
+		}
+		>li{
+			width: calc(33.33333% - 10px);
+		}
+		>li.active > a,
+		>li.active > a:focus,
+		>li.active > a:hover{
+			color: $blueColor;
+		}
+	}
+	.tab-content{
+		padding: 1em;
+		border: 1px solid $grey2;
+		border-top: none;
+		.panel-group,
+		.panel-default{
+			margin-bottom: 0;
+		}
+		.panel-title{
+			a{
+				&:hover{
+					color: $blueColor;
+				}
+			}
+		}
+	}
+}

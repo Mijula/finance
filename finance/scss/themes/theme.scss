@@ -1,9 +1,9 @@
 // theme color 
-$primaryAnchorColor: #333;
-$primaryHoverColor: #febd21;
+$primaryAnchorColor: #efd334;
+$primaryHoverColor: lighten($primaryAnchorColor, 10%);
 $formColor: #666;
-$logoHeadColor: #303030;
-$navColor: #dcf2f4;
+$navyColor: #000080;
+$blueColor: #1d5a96;
 
 // normal colors
 $white: #fff;

@@ -1,0 +1,27 @@
+.team{
+	.team-wrap{
+		img{
+			width: 100%;
+		}
+		.box{
+			float: none;
+			@include Display(inline-block);
+			@include VerticalAlign(top);
+			margin: 0 -2px 1.5em;
+		}
+	}
+	.name-wrap{
+		background: $blueColor;
+		color: $white;
+		padding: 1em;
+		
+		
+		strong{
+			font-size: 1.5em;
+			@include Display(block);
+		}
+		p{
+			margin: 0;
+		}
+	}
+}

@@ -1,28 +1,51 @@
-// top head
-.top-head{
-	background: url('image/head-bg.jpg');
-	ul{
-		@include textAlign(right);
-		li{
-			@include Display(inline-block);
-			@include VerticalAlign(middle);
-			padding: 1em;
+.header{
+	@include Position(relative);
+	z-index:1;
+	width: 100%;
+	height: 4.1em;
+	
+	.navbar{
+		background-color: $blueColor;
+		width: 100%;
+		@include BorderRadius(0);
+		margin: 0;
+		@include Position(fixed);
+		border: none;
+		border-bottom: 1px solid $grey2;
+		min-height: auto;
+	}
+	.logo{
+		margin: 0.3em 0;
+		.navbar-brand{
+			color: $white;
+			font-size: inherit;
+			@include textTransform(uppercase);
 		}
 	}
-}
-.logo-wrap {
-	background: $logoHeadColor;
-	.holder{
-		padding: 1.5em 0;
+	.navbar-nav{
+		>li{
+			>a{
+				color: $white;
+				padding: 1.5em 1em;
+				@include textTransform(uppercase);
+			}
+			&:last-child{
+				a{
+					border: 1px solid $primaryAnchorColor;
+				    padding: 0.6em 1.35em;
+				    @include BorderRadius(4px);
+				    margin: 0.8em 0;
+				}
+			}
+		}
+		>.active>a,
+		>.active>a:focus,
+		>.active>a:hover,
+		>li>a:hover,
+		>li>a:focus{
+			background-color: transparent;
+			color: $primaryAnchorColor;
+		}
 	}
-	h1{
-		margin: 0;
-	}
-}
-.header{
-	.navbar{
-		background: $navColor url('image/nav-bg.jpg');
-		border: none;
-		@include BorderRadius(0);
-	}
+	
 }

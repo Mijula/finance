@@ -1,24 +1,11 @@
-.btn-primary{
-	background-color: $primaryAnchorColor;
-	border-color: $primaryAnchorColor;
-	
-	&:hover,
-	&:focus{
-		background-color: lighten($primaryAnchorColor, 10%);
-		border-color: $primaryAnchorColor;
-	}
-}
-
 .btn-warning{
-	background-color: lighten($primaryHoverColor, 10%);
-	border-color: lighten($primaryHoverColor, 10%);
-	color: $primaryColor;
-	font-size: 1.8rem;
-	@include textTransform(capitalize);
+	background-color: darken($primaryAnchorColor, 10%);
+	border-color: darken($primaryAnchorColor, 10%);
+	color: $black;
 	
 	&:hover,
 	&:focus{
-		background-color: $primaryHoverColor;
-		border-color: $primaryHoverColor;
+		background-color: darken($primaryAnchorColor, 15%);
+		border-color: darken($primaryAnchorColor, 15%);
 	}
 }
